@@ -1,0 +1,157 @@
+p {
+    color: #000000;
+}
+
+.c1 {
+    text-align: left;
+}
+
+.c2 {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.c3 {
+    text-align: right;
+}
+
+.ct {
+    border: 3px solid green;
+}
+
+table, th, td {
+    margin-top: 30px;
+    border: 2px solid purple;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 20px;
+    text-align: center;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    float: right;
+    margin: 5px;
+    padding: 10px;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+#site-header, #site-footer, #ads {
+    background-color: lightblue;
+}
+
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Vazir.woff2') format('woff2'),
+    url('fonts/Vazir.woff') format('woff'),
+    url('fonts/Vazir.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Vazir', Consolas, sans-serif;
+    font-weight: normal;
+}
+
+a:active {
+    color: blue;
+}
+
+.Box {
+    background-image: url("images/background.jpg");
+    margin: auto;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 100px;
+    transition: transform 1s;
+}
+
+.Box:hover {
+    transform: rotate(360deg) scale(.5, .5);
+}
+
+.a1 {
+    margin: auto;
+    width: 6%;
+    margin-bottom: 50px;
+}
+
+#googleLink {
+    text-align: center;
+    text-decoration: none;
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    display: inline-block;
+    font-family: helvetica;
+    transition: background-color .5s, color .5s linear, border-radius .5s ease-out, transform .5s;
+}
+
+#googleLink:hover {
+    background-color: lightpink;
+    color: black;
+    border-radius: 50px;
+    transform: rotate(360deg) scale(2, 2);
+}
+
+.whitediv {
+    height: 200px;
+}
+
+.navbar {
+    background-color: grey;
+    direction: rtl;
+}
+
+ul.menu li {
+    display: inline-block;
+    direction: rtl;
+}
+
+ul.menu li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: all .2s;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    direction: ltr;
+    padding: 0;
+}
+
+ul.menu li i {
+    transform: translate(0px, 2px);
+}
+
+ul.menu li :hover {
+    background-color: palevioletred;
+    border-radius: 15px;
+    color: black;
+}
+
+ul.menu li:hover ul.submenu {
+    display: block;
+    background: #a2a2a2;
+}
+
+ul.submenu li {
+    display: block;
+}
